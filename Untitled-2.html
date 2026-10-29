@@ -1,0 +1,89 @@
+<HTML>
+<HEAD><TITLE>Sample Registration Form</TITLE></HEAD>
+<BODY>
+ <H2>Student Registration</H2>
+
+ <FORM ACTION="https://isbat.ac.ug/register.php" METHOD="POST">
+
+  <P>First Name: <INPUT TYPE="TEXT" NAME="fname" MAXLENGTH="50"></P>
+  <P>Last Name: <INPUT TYPE="TEXT" NAME="lname" MAXLENGTH="50"></P>
+
+  <P><INPUT TYPE="SUBMIT" VALUE="Register Now"></P>
+
+ </FORM>
+</BODY>
+</HTML>
+
+<FORM ACTION="submit_form.php" METHOD="POST">
+
+ <!-- Basic text input -->
+ Full Name: <INPUT TYPE="TEXT" NAME="fullname" SIZE="30" MAXLENGTH="80"><BR>
+
+ <!-- With a pre-filled default value -->
+ City: <INPUT TYPE="TEXT" NAME="city" VALUE="Kampala" SIZE="20"><BR>
+
+ <!-- Phone number (limited to 14 chars) -->
+ Phone (UG): <INPUT TYPE="TEXT" NAME="phone" SIZE="16" MAXLENGTH="14" PLACEHOLDER="+256 7XX XXX XXX"><BR>
+
+ <!-- Student ID -->
+ Student No: <INPUT TYPE="TEXT" NAME="stud_id" SIZE="12" MAXLENGTH="10"><BR>
+
+<P><B>Select your enrolled courses:</B></P>
+
+Web Technology:
+<INPUT TYPE="CHECKBOX" NAME="course" VALUE="web_tech" CHECKED><BR>
+
+Database Management:
+<INPUT TYPE="CHECKBOX" NAME="course" VALUE="dbms"><BR>
+
+Software Engineering:
+<INPUT TYPE="CHECKBOX" NAME="course" VALUE="se"><BR>
+
+Cloud Computing:
+<INPUT TYPE="CHECKBOX" NAME="course" VALUE="cloud"><BR>
+
+ <!-- Password -->
+ Create Password: <INPUT TYPE="PASSWORD" NAME="pwd" SIZE="20" MAXLENGTH="30"><BR>
+ Confirm Password:<INPUT TYPE="PASSWORD" NAME="pwd2" SIZE="20" MAXLENGTH="30"><BR>
+
+ <!-- Section 2: Academic Information -->
+ <H3>Academic Information</H3>
+ Programme:
+ <SELECT NAME="programme" SIZE="1">
+  <OPTION VALUE=""> -- Select Programme -- </OPTION>
+  <OPTION VALUE="bcs">Bachelor of Computer Science</OPTION>
+  <OPTION VALUE="bit">Bachelor of Information Technology</OPTION>
+  <OPTION VALUE="bai">Bachelor of Artificial Intelligence</OPTION>
+  <OPTION VALUE="dit">Diploma in Information Technology</OPTION>
+ </SELECT><BR>
+
+ Year of Study:
+ <INPUT TYPE="RADIO" NAME="year" VALUE="1"> Year 1
+ <INPUT TYPE="RADIO" NAME="year" VALUE="2" CHECKED> Year 2
+ <INPUT TYPE="RADIO" NAME="year" VALUE="3"> Year 3
+ <INPUT TYPE="RADIO" NAME="year" VALUE="4"> Year 4<BR>
+
+ Mode of Study:
+ <INPUT TYPE="RADIO" NAME="mode" VALUE="day"> Day
+ <INPUT TYPE="RADIO" NAME="mode" VALUE="eve"> Evening
+ <INPUT TYPE="RADIO" NAME="mode" VALUE="wkd"> Weekend<BR>
+
+ <!-- Section 3: Supporting Documents -->
+ <H3>Attach Documents</H3>
+ O-Level Certificate (PDF):
+ <INPUT TYPE="FILE" NAME="olevel" ACCEPT=".pdf"><BR>
+ A-Level or Diploma Certificate (PDF):
+ <INPUT TYPE="FILE" NAME="alevel" ACCEPT=".pdf"><BR>
+ Passport Photo (JPG/PNG):
+ <INPUT TYPE="FILE" NAME="photo" ACCEPT="image/*"><BR>
+
+ <!-- Hidden tracking fields -->
+ <INPUT TYPE="HIDDEN" NAME="campus" VALUE="Kampala-Main">
+ <INPUT TYPE="HIDDEN" NAME="acad_year" VALUE="2025/2026">
+
+ <INPUT TYPE="SUBMIT" VALUE="Submit Registration">
+ <INPUT TYPE="RESET" VALUE="Clear Form">
+
+ </FORM>
+</BODY>
+</HTML>
